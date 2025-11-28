@@ -15,5 +15,6 @@ pub fn Decode(opcode: u8) -> Instruction {
         0x48 => Instruction::PHA(AddressingMode::Implied),
         0x08 => Instruction::PHP(AddressingMode::Implied),
         0x68 => Instruction::PLA(AddressingMode::Implied),
+        _ => todo!(),
     }
 }
